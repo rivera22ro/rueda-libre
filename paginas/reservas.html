@@ -18,22 +18,105 @@
                 </ul>
             </nav>
         </header>
-        <div>
-            <p>Contacto<a href="https://mail.google.com/mail/?view=cm&fs=1&to=tucorreo@gmail.com">
-                rivera22ro@gmail.com
-                        </a>
-            </p>
-            <nav>
-                <h2>horario de atención</h2>
-                <dl class="menu">
-                    <dt>lunes a viernes</dt>
-                    <dd>7:00 a. m. a 7:00 p. m</dd>
-                    <dt>domingos y festivos</dt>
-                    <dd>6:00 a. m. a 2:00 p. m.</dd>
-                </dl>
-            </nav>
+            <section>
+                <p>Contacto<a href="https://mail.google.com/mail/?view=cm&fs=1&to=tucorreo@gmail.com">
+                    rivera22ro@gmail.com
+                            </a>
+                </p>
+                <nav>
+                    <h2>horario de atención</h2>
+                    <dl class="menu">
+                        <dt>lunes a viernes</dt>
+                        <dd>7:00 a. m. a 7:00 p. m</dd>
+                        <dt>domingos y festivos</dt>
+                        <dd>6:00 a. m. a 2:00 p. m.</dd>
+                    </dl>
+                </nav>
+            </section>
+            <section>
+                <h3>Completa los siguientes datos para solicitar tu alquiler.</h3>
 
-        </div>
+                <form action="" method="post">
+
+                    <fieldset>
+                        <legend>Tus datos</legend>
+
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre_completo"required>
+
+                        <label for="documento">Número de documento:</label>
+                        <input type="number" id="documento" name="documento"required>
+
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo_electronico"required>
+
+                        <label for="celular">Celular:</label>
+                        <input type="tel" id="celular"name="celular" pattern="[0-9]{10}" title="Ingresa un número de celular de exactamente 10 dígitos"required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Tu alquiler</legend>
+
+                        <label for="fecha">Fecha del alquiler:</label>
+                        <input type="date" id="fecha" name="fecha_alquiler"
+                            required>
+
+                        <label for="bicicleta">Tipo de bicicleta:</label>
+                        <select id="bicicleta" name="tipo_bicicleta" required>
+                            <option value="">Selecciona una bicicleta</option>
+                            <option value="urbana">Urbana</option>
+                            <option value="montana">Montaña</option>
+                            <option value="electrica">Eléctrica</option>
+                        </select>
+
+                        <p>Plan de alquiler:</p>
+                        <input type="radio" id="una_hora" name="plan"
+                            value="1_hora" required>
+                        <label for="una_hora">1 hora</label>
+
+                        <input type="radio" id="medio_dia" name="plan"
+                            value="medio_dia">
+                        <label for="medio_dia">Medio día</label>
+
+                        <input type="radio" id="dia_completo" name="plan"
+                            value="dia_completo">
+                        <label for="dia_completo">Día completo</label>
+
+                        <label for="cantidad">Cantidad de bicicletas:</label>
+                        <input type="number" id="cantidad"
+                            name="cantidad_bicicletas"
+                            min="1" step="1" required>
+
+                        <label for="ruta">Recorrido guiado:</label>
+                        <select id="ruta" name="recorrido_guiado" required>
+                            <option value="ninguno">Ninguno</option>
+                            <option value="ruta_urbana">Ruta urbana</option>
+                            <option value="ruta_natural">Ruta natural</option>
+                            <option value="ruta_panoramica">Ruta panorámica</option>
+                        </select>
+
+                        <label for="comentarios">Comentarios:</label>
+                        <br>
+                        <textarea id="comentarios" name="comentarios"
+                                rows="4" cols="40"
+                                placeholder="Escribe tus comentarios aquí..."></textarea>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Confirmación</legend>
+                        <label for="politicas"> Acepto las políticas de alquiler.</label>
+                        <input type="checkbox" id="politicas"
+                            name="acepta_politicas"
+                            value="si" required>
+                        
+                    </fieldset>
+
+                    <button type="submit">Enviar solicitud de alquiler</button>
+
+                </form>
+            </section>
     </main>
     
     <footer>
