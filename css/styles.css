@@ -1,0 +1,36 @@
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+summary{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 600;
+}
+li {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 600;
+}
+footer {
+  background-color: #A8BDAF;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
