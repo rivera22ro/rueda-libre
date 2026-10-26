@@ -41,3 +41,24 @@ Remote address
 127.0.0.1:5500
 Referrer policy
 strict-origin-when-cross-origin
+
+pruebas 
+1 ingreso 2 caracteres en nombre no me deja enviar el formulario me sale una alarma para que aumente minimo 3 caracteres
+2 ingreso menos numeros de los permitidos y salta la alarma 
+3 no marque la aceptacion de politicas y salta la alarma
+4 no seleciono ninguna bicicleta y salta la almarma 
+5 ingreso el correo sin @ y salta la alarma 
+6 ingreso menos numeros de celular y salta la alarma 
+7 no escribo ningun comentario y me deja enviar el formulario 
+8 me obliga a elegir almenos 1 hora 
+9 se puede navegar con el teclado 
+
+
+#F4F4F4 #F4F4F4  4.83:1 para texto normal
+#F4F4F4 #F39A2B 2.01:1 para texto grande
+#14213D #F39A2B 7.2:1 para texto normal
+#14213D #FAF6EF 14.82:1 para texto pequeño
+#5B6470 #FAF6EF 5.56:1 para texto normal
+#1E7A4F #FAF6EF 4.93:1  para texto normal
+#F39A2B #FAF6EF 2.05:1 para texto grande
+#F4F4F4 #14213D 14.52:1 para texto pequeño 

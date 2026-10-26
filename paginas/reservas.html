@@ -36,30 +36,29 @@
             <section>
                 <h3>Completa los siguientes datos para solicitar tu alquiler.</h3>
 
-                <form action="" method="post">
+                <form id="formularioAlquiler">
 
                     <fieldset>
                         <legend>Tus datos</legend>
 
                         <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre_completo"required>
+                        <input type="text" id="nombre" name="nombre_completo" minlength="3" pattern="[A-Za-zÁÉÍÓÚáéíóúÜüÑñ ]+" title="Ingresa tu nombre usando solo letras y espacios." required>
 
                         <label for="documento">Número de documento:</label>
-                        <input type="number" id="documento" name="documento"required>
+                        <input type="text" id="documento" name="documento" inputmode="numeric" pattern="[0-9]{6,10}" minlength="6" maxlength="10" title="Ingresa entre 6 y 10 dígitos numéricos." required>
 
                         <label for="correo">Correo electrónico:</label>
                         <input type="email" id="correo" name="correo_electronico"required>
 
                         <label for="celular">Celular:</label>
-                        <input type="tel" id="celular"name="celular" pattern="[0-9]{10}" title="Ingresa un número de celular de exactamente 10 dígitos"required>
+                        <input type="tel" id="celular"name="celular" pattern="3[0-9]{9}" title="Ingresa un número de celular de exactamente 10 dígitos"required>
                     </fieldset>
 
                     <fieldset>
                         <legend>Tu alquiler</legend>
 
                         <label for="fecha">Fecha del alquiler:</label>
-                        <input type="date" id="fecha" name="fecha_alquiler"
-                            required>
+                        <input type="date" id="fecha" name="fecha_alquiler" min="2026-11-01" max="2026-12-31" required>
 
                         <label for="bicicleta">Tipo de bicicleta:</label>
                         <select id="bicicleta" name="tipo_bicicleta" required>
@@ -99,6 +98,7 @@
                         <br>
                         <textarea id="comentarios" name="comentarios"
                                 rows="4" cols="40"
+                                maxlength="300"
                                 placeholder="Escribe tus comentarios aquí..."></textarea>
                     </fieldset>
 
