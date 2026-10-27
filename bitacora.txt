@@ -54,11 +54,21 @@ pruebas
 9 se puede navegar con el teclado 
 
 
-#F4F4F4 #F4F4F4  4.83:1 para texto normal
-#F4F4F4 #F39A2B 2.01:1 para texto grande
-#14213D #F39A2B 7.2:1 para texto normal
-#14213D #FAF6EF 14.82:1 para texto pequeño
-#5B6470 #FAF6EF 5.56:1 para texto normal
-#1E7A4F #FAF6EF 4.93:1  para texto normal
-#F39A2B #FAF6EF 2.05:1 para texto grande
-#F4F4F4 #14213D 14.52:1 para texto pequeño 
+Verde Ruta #1E7A4F Botones y enlaces
+
+Naranja Pedal #F39A2B Destacados y botones secundarios
+
+Azul Noche #14213D Títulos y encabezado
+
+Crema #FAF6EF Fondo general 
+
+Gris Asfalto #5B6470 Texto secundario
+
+#F4F4F4 #1E7A4F  4.83:1  aprobado
+#F4f4f4 #F39A2B 2.01:1 no pasa
+#14213D #F39A2B 7.2:1 aprobado
+#14213D #FAF6EF 14.82:1 aprobado 
+#5B6470 #FAF6EF 5.56:1 aprobado
+#1E7A4F #FAF6EF 4.93:1 aprobado
+#F39A2B #FAF6EF 2.05:1 no pasa
+#F4F4F4  #14213D 14.52:1 pasa

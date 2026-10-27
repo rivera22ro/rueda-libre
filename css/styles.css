@@ -1,18 +1,47 @@
 
+:root{
+  --Verde-Ruta: #1E7A4F;
+  --Naranja-Pedal: #F39A2B;
+  --Azul-Noche: #14213D;
+  --Crema: #FAF6EF;
+  --Gris-Asfalto: #5B6470;
+
+  --font-titulos: "Montserrat", Arial;
+  --font-texto: "Open Sans", Helvetica;
+
+  --espaciado-pequeño: 0.25rem;
+  --espaciado-mediano: 0.5rem;
+  --espaciado-grande: 1rem;
+}
+* p{
+  from-font-family: var(--font-texto);
+  baground-color: var(--Crema);
+  color: var(--Azul-Noche);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Crema);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1, h2, h3, h4, h5, h6{
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-titulos);
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 summary{
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-titulos);
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-texto) ;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -20,7 +49,7 @@ p {
     "wdth" 600;
 }
 li {
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--font-texto);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -28,9 +57,19 @@ li {
     "wdth" 600;
 }
 footer {
-  background-color: #A8BDAF;
+  background-color: var(--naranja);
   color: white;
-  padding: 30px 20px;
+  padding: 10px 20px;
   text-align: center;
   font-family: "Open Sans", sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+  background-color: var(--Crema);
 }
