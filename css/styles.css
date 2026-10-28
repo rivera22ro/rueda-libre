@@ -40,8 +40,8 @@ main {
 
 /* 4. Portada: en tu HTML corresponde al header */
 header {
-    min-height: 70vh;
-    padding: 2rem;
+    min-height: auto;
+    padding: 1rem 2rem;
     background-color: var(--Azul-Noche);
     color: var(--Crema);
 }
@@ -53,7 +53,7 @@ header h1 {
 
 /* La imagen del encabezado no debe desbordarse */
 header > img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
