@@ -129,6 +129,8 @@ footer a {
     padding: 10px 16px;
     text-decoration: none;
     border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* Al pasar el mouse */
@@ -157,6 +159,7 @@ textarea:focus {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 1rem;
 }
 
 /* Celdas y encabezados */
@@ -314,6 +317,8 @@ aside {
     background-color: var(--Azul-Noche);
     border-color: var(--Azul-Noche);
 }
+
+
 
 
 
