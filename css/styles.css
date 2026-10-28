@@ -17,44 +17,29 @@
   from-font-family: var(--font-texto);
   baground-color: var(--Crema);
   color: var(--Azul-Noche);
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  
 }
-body {
+* {
   background-color: var(--Crema);
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: var(--font-titulos);
-  font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
+  
 }
 summary{
   font-family: var(--font-titulos);
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  cursor: pointer;
 }
-p {
-  font-family: var(--font-texto) ;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 600;
-}
+
 li {
   font-family: var(--font-texto);
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 600;
 }
 footer {
   background-color: var(--naranja);
@@ -65,11 +50,54 @@ footer {
 }
 
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+
+/* Enlaces del menú */
+#menu a {
+    color: var(--Gris-Asfalto);
+    text-decoration: none;
 }
-header{
-  background-color: var(--Crema);
+
+/* Cuando pasamos el mouse */
+#menu a:hover {
+    color: var(--Verde-Ruta);
+    text-decoration: underline;
 }
+
+/* Cuando llegamos con el teclado */
+#menu a:focus {
+    outline: 2px solid var(--Verde-Ruta);
+    outline-offset: 3px;
+}
+
+
+/* Botón para reservar */
+.btn-reservar {
+    display: inline-block;
+    background-color: var(--Verde-Ruta);
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Al pasar el mouse */
+.btn-reservar:hover {
+    background-color: var(--Gris-Asfalto);
+}
+
+/* Al seleccionar con el teclado */
+.btn-reservar:focus {
+    outline: 3px solid var(--Gris-Asfalto);
+    outline-offset: 3px;
+}
+
+
+
+/* Foco visible en los campos */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--Verde-Ruta);
+    outline-offset: 2px;
+}
+

@@ -72,3 +72,12 @@ Gris Asfalto #5B6470 Texto secundario
 #1E7A4F #FAF6EF 4.93:1 aprobado
 #F39A2B #FAF6EF 2.05:1 no pasa
 #F4F4F4  #14213D 14.52:1 pasa
+
+
+Problema: La clase .activo no aplicaba el color verde al enlace Inicio.
+
+Causa: El selector #menu a tenía mayor especificidad (1-0-1) que .activo (0-1-0), por eso prevalecía el color gris.
+
+Solución: Cambié .activo por #menu a.activo, que tiene mayor especificidad (1-1-1).
+
+Verificación: Recargué la página y comprobé en DevTools que el enlace activo apareciera en verde, sin usar !important ni estilos en línea.
