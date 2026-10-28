@@ -81,3 +81,5 @@ Causa: El selector #menu a tenía mayor especificidad (1-0-1) que .activo (0-1-0
 Solución: Cambié .activo por #menu a.activo, que tiene mayor especificidad (1-1-1).
 
 Verificación: Recargué la página y comprobé en DevTools que el enlace activo apareciera en verde, sin usar !important ni estilos en línea.
+
+width 764px

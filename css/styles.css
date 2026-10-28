@@ -13,61 +13,112 @@
   --espaciado-mediano: 0.5rem;
   --espaciado-grande: 1rem;
 }
-* p{
-  from-font-family: var(--font-texto);
-  baground-color: var(--Crema);
-  color: var(--Azul-Noche);
-  
-}
-* {
-  background-color: var(--Crema);
+
+
+/* 1. Todos los elementos incluyen padding y border en su ancho */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: var(--font-titulos);
-  font-weight: 600;
-  font-style: normal;
-  
-}
-summary{
-  font-family: var(--font-titulos);
-  font-weight: 700;
-  font-style: normal;
-  cursor: pointer;
+/* 2. Estilos generales */
+body {
+    margin: 0;
+    font-family: var(--font-texto);
+    background-color: var(--Crema);
+    color: var(--Azul-Noche);
 }
 
+/* 3. Contenido principal centrado */
+main {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: var(--espaciado-grande);
+}
+
+/* 4. Portada: en tu HTML corresponde al header */
+header {
+    min-height: 70vh;
+    padding: 2rem;
+    background-color: var(--Azul-Noche);
+    color: var(--Crema);
+}
+
+
+header h1 {
+    font-family: var(--font-titulos);
+}
+
+/* La imagen del encabezado no debe desbordarse */
+header > img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titulos);
+    font-weight: 600;
+}
+
+
+/* Listas */
 li {
-  font-family: var(--font-texto);
-  font-weight: 500;
-  font-style: normal;
+    font-family: var(--font-texto);
+    font-weight: 500;
 }
+
+
 footer {
-  background-color: var(--naranja);
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
+    background-color: var(--Azul-Noche);
+    color: var(--Crema);
+    padding: var(--espaciado-grande);
+    text-align: center;
+    font-family: var(--font-texto);
 }
 
+footer a {
+    color: var(--Crema);
+}
 
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espaciado-grande);
+    list-style: none;
+    margin: 0;
+    padding: var(--espaciado-grande) 0;
+}
 
-/* Enlaces del menú */
+#menu li {
+    display: inline-block;
+}
+
 #menu a {
-    color: var(--Gris-Asfalto);
+    display: inline-block;
+    color: var(--Crema);
     text-decoration: none;
+    padding: var(--espaciado-mediano);
 }
 
-/* Cuando pasamos el mouse */
+#menu a.activo {
+    color: var(--Naranja-Pedal);
+    font-weight: 600;
+}
+
 #menu a:hover {
-    color: var(--Verde-Ruta);
     text-decoration: underline;
 }
 
-/* Cuando llegamos con el teclado */
 #menu a:focus {
-    outline: 2px solid var(--Verde-Ruta);
-    outline-offset: 3px;
+    outline: 2px solid var(--Naranja-Pedal);
+    outline-offset: 2px;
 }
+
+
 
 
 /* Botón para reservar */
@@ -100,4 +151,170 @@ textarea:focus {
     outline: 2px solid var(--Verde-Ruta);
     outline-offset: 2px;
 }
+
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Celdas y encabezados */
+th,
+td {
+    padding: 0.75rem;
+    border: 1px solid var(--Gris-Asfalto);
+    text-align: left;
+}
+
+/* Encabezados */
+th {
+    background-color: var(--Verde-Ruta);
+    color: white;
+}
+
+
+
+article {
+    width: 100%;
+    margin: var(--espaciado-grande) 0;
+    padding: var(--espaciado-grande);
+    border: 1px solid var(--Gris-Asfalto);
+    border-radius: 0.5rem;
+}
+
+
+article img {
+    display: block;
+    width: 30%;
+    max-width: 25rem;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+
+header > img {
+    display: block;
+    width: 100%;
+    max-width: 40rem;
+    height: 15rem;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+details {
+    margin-bottom: var(--espaciado-grande);
+    padding: var(--espaciado-grande);
+    border: 1px solid var(--Gris-Asfalto);
+    border-radius: 0.5rem;
+}
+
+summary {
+    font-family: var(--font-titulos);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+aside {
+    margin: var(--espaciado-grande) 0;
+    padding: var(--espaciado-grande);
+}
+
+/* formulario */
+
+/* FORMULARIO DE RESERVAS */
+
+/* Separación general del formulario */
+#formularioAlquiler {
+    width: 80%;
+    margin: var(--espaciado-grande) auto;
+}
+
+/* Grupos de campos */
+#formularioAlquiler fieldset {
+    min-width: 0;
+    margin: 0 0 var(--espaciado-grande);
+    padding: var(--espaciado-grande);
+    border: 1px solid var(--Gris-Asfalto);
+    border-radius: 0.5rem;
+}
+
+/* Títulos de los grupos */
+#formularioAlquiler legend {
+    padding: 0 var(--espaciado-mediano);
+    font-family: var(--font-titulos);
+    font-weight: 500;
+}
+
+/* Etiquetas encima de los campos */
+#formularioAlquiler label {
+    display: block;
+    margin: var(--espaciado-mediano) 0;
+}
+
+/* Campos de texto, selectores y comentarios */
+#formularioAlquiler input:not([type="radio"]):not([type="checkbox"]),
+#formularioAlquiler select,
+#formularioAlquiler textarea {
+    display: block;
+    width: 70%;
+    max-width: 80%;
+    margin-bottom: var(--espaciado-grande);
+    padding: var(--espaciado-mediano);
+    border: 1px solid var(--Gris-Asfalto);
+    border-radius: 0.25rem;
+    font: inherit;
+}
+
+/* Evita que el usuario ensanche el área de comentarios */
+#formularioAlquiler textarea {
+    resize: vertical;
+}
+
+/* Opciones de plan: radio y etiqueta en línea */
+#formularioAlquiler input[type="radio"] {
+    display: inline-block;
+    margin: 0 var(--espaciado-pequeño) var(--espaciado-grande) 0;
+}
+
+#formularioAlquiler input[type="radio"] + label {
+    display: inline-block;
+    margin: 0 var(--espaciado-grande) var(--espaciado-grande) 0;
+}
+
+/* Casilla de políticas */
+#formularioAlquiler input[type="checkbox"] {
+    display: inline-block;
+    margin: var(--espaciado-mediano);
+}
+
+/* Foco visible */
+#formularioAlquiler input:focus,
+#formularioAlquiler select:focus,
+#formularioAlquiler textarea:focus {
+    outline: 2px solid var(--Verde-Ruta);
+    outline-offset: 2px;
+}
+
+/* Botón de envío */
+#formularioAlquiler button {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--Verde-Ruta);
+    border-radius: 0.5rem;
+    background-color: var(--Verde-Ruta);
+    color: #FFFFFF;
+    font: inherit;
+    cursor: pointer;
+}
+
+#formularioAlquiler button:hover {
+    background-color: var(--Azul-Noche);
+    border-color: var(--Azul-Noche);
+}
+
+
+
 
