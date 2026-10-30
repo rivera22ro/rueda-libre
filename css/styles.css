@@ -202,6 +202,13 @@ th {
     border: 1px solid var(--Gris-Asfalto);
     border-radius: 0.5rem;
     position: relative;
+    width: 90%;
+    height: auto;
+
+    & img {
+        width: 250px;
+        height: 150px;
+    }
     
     & h2 {
         text-align: center;
@@ -221,6 +228,10 @@ th {
     padding: var(--espaciado-grande);
     border: 1px solid var(--Gris-Asfalto);
     border-radius: 0.5rem;
+    & img {
+        width: 250px;
+        height: 150px;
+    }
 }
 
 .pasos {
